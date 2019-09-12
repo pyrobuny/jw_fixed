@@ -8,12 +8,12 @@ p {
   margin-bottom: .67em;
 }
 nav, footer {
-  background-color: #444;
+  background-color: #cccccc;
 }
 footer {
   text-align: center;
   padding: 1em 0 .3em 0;
-  color: #D0D0D0;
+  color: #002b36;
 }
 /*-- Main Menu Styles--*/
 nav ul {
@@ -23,7 +23,7 @@ nav ul {
   justify-content: space-between;
 }
 nav a:link, nav a:visited {
-  color: #D0D0D0;
+  color: #002b36;
   text-decoration: none;
 }
 nav a:hover, nav a:active  {
@@ -31,7 +31,7 @@ nav a:hover, nav a:active  {
   text-decoration: underline;
 }
 nav a.active {
-  color: #F0F0F0;
+  color: #002b36;
 }
 /*-- Hero Unit Styles--*/
 header {
@@ -49,6 +49,16 @@ header h1 {
   margin: 0 auto;
   padding: 0 auto;
   text-align: center;
+}
+
+/* I did this instead of just implementing a drop cap class, so I don't have to declare a class in the html */
+/* Alternatively, I can rename the class "dropcap" and it would work wherever the class is used*/
+p:first-of-type:first-letter {
+    float: left;
+    font-size: 50px;
+    line-height: 1;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 .small {
   margin-top: 1em;
@@ -88,7 +98,7 @@ a.button {
   border: 1px solid #888;
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #888;
+  color: #002b36;
   border-radius: 200px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
